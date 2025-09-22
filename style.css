@@ -22,11 +22,12 @@
 
 /****************Header nellys***********/
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 }
-.logo{
+
+.logo {
     width: 50%;
 }
 
@@ -47,7 +48,7 @@
     color: var(--color-acento);
 }
 
-.btn-header{
+.btn-header {
     background-color: var(--color-acento);
     border-radius: var(--border-radius);
     border: var(--color-secundario);
@@ -58,7 +59,8 @@
     font-weight: bolder;
     height: auto;
 }
-.header-container{
+
+.header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,12 +90,12 @@
     text-align: center;
 }
 
-.main__titulo{
+.main__titulo {
     position: relative;
     text-align: center;
 }
 
-.main__subtitulo{
+.main__subtitulo {
     position: relative;
     text-align: center;
 }
@@ -124,7 +126,7 @@
 .art {
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
@@ -134,7 +136,8 @@
     display: flex;
 }
 
-.art__titulo, .art__info {
+.art__titulo,
+.art__info {
     display: flex;
     flex-direction: column;
 }
@@ -226,4 +229,33 @@
 
 .datos__enlace:hover {
     text-decoration: underline;
+}
+
+@media (max-width:1024px) {
+    .contacto {
+        flex-direction: column;
+    }
+
+    .formulario,
+    .datos {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .datos {
+        grid-template-rows: 1fr;
+    }
+
+    .formulario {
+        border-right: none;
+        border-bottom: 1px solid var(--color-principal-oscuro);
+    }
+
+    .datos__cardmaps {
+        height: 240px;
+    }
+
+    .datos__card {
+        grid-column: 1 / 3;
+    }
 }
