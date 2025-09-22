@@ -20,6 +20,22 @@
     font-family: "Nunito";
 }
 
+/****************Header nellys***********/
+.header__nav{
+    display: flex;
+}
+.lista{
+    display: flex;
+    gap:16px;
+    list-style: none;
+}
+.lista-items a{
+    text-decoration: none;
+    color: var(--color-acento);
+}
+.btn-header{}
+
+/* Front Page*/
 .main {
 
     background-color: var(--color-secundario);
@@ -95,3 +111,53 @@
 }
 
 .lateral {}
+
+/* Página de contacto */
+.contacto {
+    background-color: var(--color-secundario);
+    display: flex;
+    min-height: 40vh;
+
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid var(--color-principal-oscuro);
+}
+
+.formulario__input,
+.formulario__text {
+    width: 100%;
+    min-height: 32px;
+    padding: 16px;
+}
+
+.formulario,
+.datos {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 16px;
+}
+
+.datos {
+    justify-content: space-between;
+}
+
+.datos__card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__submit {
+    padding: 8px;
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--color-principal-oscuro);
+    background-color: var(--color-acento);
+}
