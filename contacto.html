@@ -12,7 +12,9 @@
 
 <body>
     <header class="header">
-        <img src="img/logo-1.png" alt="" class="logo">
+        <div class="header__contLogo">
+            <img src="img/logo-1.png" alt="" class="logo">
+        </div>
         <nav class="header__nav">
             <ul class="lista">
                 <li class="lista-items"><a href="#">Home</a></li>
@@ -28,12 +30,15 @@
             <form class="formulario">
                 <h2 class="formulario__h2">¿Necesitas imprimir algo? Dejanos tus datos</h2>
                 <input class="formulario__input" type="text" name="nombre" id="" placeholder="Nombre">
-                <input class="formulario__input" type="text" name="email" id="" placeholder="Email / Correo electronico">
+                <input class="formulario__input" type="text" name="email" id=""
+                    placeholder="Email / Correo electronico">
                 <input class="formulario__input" type="text" name="telefono" id="" placeholder="Teléfono">
-                <textarea class="formulario__text" name="" id="" placeholder="Quiero imprimir... Necesito una pieza urgente" rows="8    "></textarea>
+                <textarea class="formulario__text" name="" id=""
+                    placeholder="Quiero imprimir... Necesito una pieza urgente" rows="8    "></textarea>
                 <label for="" class="formulario__politicas">
                     <input type="checkbox" name="" id="formulario__checkbox" class="formulario__checkbox">
-                    Haciendo click Ud. acepta la política de privacidad de este sitio web. Los datos personales que nos facilite serán tratados para la gestión de su solicitud
+                    Haciendo click Ud. acepta la política de privacidad de este sitio web. Los datos personales que nos
+                    facilite serán tratados para la gestión de su solicitud
                     previo su consentimiento. Si desea ampliar información, Aviso legal
                 </label>
                 <input type="submit" value="Presupuestar" class="formulario__submit">
