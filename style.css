@@ -21,19 +21,22 @@
 }
 
 /****************Header nellys***********/
-.header__nav{
+.header__nav {
     display: flex;
 }
-.lista{
+
+.lista {
     display: flex;
-    gap:16px;
+    gap: 16px;
     list-style: none;
 }
-.lista-items a{
+
+.lista-items a {
     text-decoration: none;
     color: var(--color-acento);
 }
-.btn-header{}
+
+.btn-header {}
 
 /* Front Page*/
 .main {
@@ -43,32 +46,38 @@
 }
 
 .cabecera__contacto {
-
-
     text-decoration: none;
-
     background-color: var(--color-acento);
-
     border-radius: 16px;
-
     color: var(--color-principal-oscuro);
-
     padding: 8px;
-
     font-weight: bold;
-
+    font-size: 25px;
 }
 
+.main__texto {
+    position: relative;
+    text-align: center;
+}
+
+.main__titulo{
+    position: relative;
+    text-align: center;
+}
+
+.main__subtitulo{
+    position: relative;
+    text-align: center;
+}
 
 .img__art {
     height: 300px;
     width: 250px;
-
 }
 
 .img__cabecera {
-
-    width: 100vh;
+    width: 1905px;
+    /* position: absolute; */
 
 }
 
@@ -78,27 +87,29 @@
 }
 
 .section__art {
-
+    column-count: 3;
     display: flex;
-
-    flex-direction: column;
-
-
 }
+
+
 
 .art {
-
     display: flex;
-
     flex-direction: column;
+    
 
 }
 
-.art1 {}
+.art1,
+.art2,
+.art3 {
+    display: flex;
+}
 
-.art2 {}
-
-.art3 {}
+.art__titulo, .art__info {
+    display: flex;
+    flex-direction: column;
+}
 
 .lateral {}
 
