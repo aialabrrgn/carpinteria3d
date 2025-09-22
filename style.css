@@ -68,6 +68,8 @@
     flex-direction: column;
 
 
+
+
 }
 
 .art {
@@ -78,10 +80,18 @@
 
 }
 
-.art1 {}
+.art1 {
 
-.art2 {}
+    display: block;
 
-.art3 {}
+}
+
+.art2 {
+    display: block;
+}
+
+.art3 {
+    display: block;
+}
 
 .lateral {}
