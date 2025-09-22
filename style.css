@@ -1,0 +1,21 @@
+:root {
+    /* Colores */
+    --color-principal-oscuro: #6c584c;
+    --color-principal-claro: #a98467;
+    --color-acento: #adc178;
+    --color-secundario: #f0ead2;
+    /* Border */
+    --border-radius: 16px;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("./fonts/nunito.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
