@@ -21,8 +21,7 @@
 }
 
 /****************Header nellys***********/
-.header{
-    background-color: var(--color-principal-claro);
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -47,6 +46,7 @@
     text-decoration: none;
     color: var(--color-acento);
 }
+
 .btn-header{
     background-color: var(--color-acento);
     border-radius: var(--border-radius);
@@ -153,7 +153,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid var(--color-principal-oscuro);
+    border-right: 1px solid var(--color-principal-oscuro);
+}
+
+.formulario__h2 {
+    color: var(--color-principal-oscuro);
+    font-weight: 800;
 }
 
 .formulario__input,
@@ -168,19 +173,24 @@
     padding: 64px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 50%;
     gap: 16px;
 }
 
 .datos {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8fr;
 }
 
 .datos__card {
-    width: 80%;
     display: flex;
     flex-direction: column;
+    gap: 4px;
+}
+
+.datos__card--wfull {
+    grid-column: 1 / 3;
 }
 
 .formulario__submit {
@@ -189,4 +199,31 @@
     border-radius: var(--border-radius);
     color: var(--color-principal-oscuro);
     background-color: var(--color-acento);
+}
+
+.datos__cardmaps {
+    width: 100%;
+    height: 320px;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 8px 8px 8px var(--color-principal-oscuro);
+}
+
+.datos__span {
+    text-transform: capitalize;
+    color: var(--color-principal-oscuro);
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.datos__enlace {
+    color: var(--color-principal-oscuro);
+    font-style: italic;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.datos__enlace:hover {
+    text-decoration: underline;
 }
