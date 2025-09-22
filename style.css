@@ -19,3 +19,69 @@
     box-sizing: border-box;
     font-family: "Nunito";
 }
+
+.main {
+
+    background-color: var(--color-secundario);
+
+}
+
+.cabecera__contacto {
+
+
+    text-decoration: none;
+
+    background-color: var(--color-acento);
+
+    border-radius: 16px;
+
+    color: var(--color-principal-oscuro);
+
+    padding: 8px;
+
+    font-weight: bold;
+
+}
+
+
+.img__art {
+    height: 300px;
+    width: 250px;
+
+}
+
+.img__cabecera {
+
+    width: 100vh;
+
+}
+
+.main__img {
+    width: 100vh;
+
+}
+
+.section__art {
+
+    display: flex;
+
+    flex-direction: column;
+
+
+}
+
+.art {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.art1 {}
+
+.art2 {}
+
+.art3 {}
+
+.lateral {}
