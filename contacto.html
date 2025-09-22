@@ -9,40 +9,52 @@
 </head>
 
 <body>
+    <header class="header">
+        <img src="img/logo-1.png" alt="" class="logo">
+        <nav class="header__nav">
+            <ul class="lista">
+                <li class="lista-items"><a href="#">Home</a></li>
+                <li class="lista-items"><a href="#">Acerca de</a></li>
+                <li class="lista-items"><a href="#">Servicios</a></li>
+                <li class="lista-items"><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="btn-header">Comprar</button>
+        </nav>
+    </header>
     <main class="main">
-        <div class="contacto">
+        <section class="contacto">
             <form class="formulario">
+                <h2 class="formulario__h2">¿Necesitas imprimir algo? Dejanos tus datos</h2>
                 <input class="formulario__input" type="text" name="nombre" id="" placeholder="Nombre">
                 <input class="formulario__input" type="text" name="email" id="" placeholder="Email / Correo electronico">
                 <input class="formulario__input" type="text" name="telefono" id="" placeholder="Teléfono">
-                <textarea class="formulario__text" name="" id="" placeholder="Quiero imprimir... Necesito una pieza urgente" rows="10"></textarea>
-                <label for="">
-                    <input type="checkbox" name="" id="">
+                <textarea class="formulario__text" name="" id="" placeholder="Quiero imprimir... Necesito una pieza urgente" rows="8    "></textarea>
+                <label for="" class="formulario__politicas">
+                    <input type="checkbox" name="" id="" class="formulario__checkbox">
                     Haciendo click Ud. acepta la política de privacidad de este sitio web. Los datos personales que nos facilite serán tratados para la gestión de su solicitud
                     previo su consentimiento. Si desea ampliar información, Aviso legal
                 </label>
-                <p></p>
-                <p></p>
                 <input type="submit" value="Presupuestar" class="formulario__submit">
             </form>
-            <div class="datos">
+            <article class="datos">
                 <div class="datos__card">
-                    <span>Telefono</span>
-                    <span>+3499999999</span>
+                    <span class="datos__span">Teléfono</span>
+                    <a class="datos__enlace" href="tel:+3499999999">+34 999 99 99 99</a>
                 </div>
+
                 <div class="datos__card">
-                    <span>dirección</span>
-                    <iframe
+                    <span class="datos__span">email</span>
+                    <a href="mailto:info@impresiones3d.com" class="datos__enlace">info@impresiones3d.com</a>
+                </div>
+                <div class="datos__card datos__card--wfull">
+                    <span class="datos__span">dirección</span>
+                    <span>Venta de la estrella Kalea, 6 pabellon 14, Vitoria-Gazteiz</span>
+                    <iframe class="datos__cardmaps"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.743908292298!2d-2.6600843230815983!3d42.836023104897784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc280f708fcc3%3A0xbbdc7100a6ec28ec!2sCarpinter%C3%ADa%20Ebanister%C3%ADa%20Salburua!5e0!3m2!1ses!2ses!4v1758529866139!5m2!1ses!2ses"
                         allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <span>Venta de la estrella Kalea, 6 pabellon 14, Vitoria-Gazteiz</span>
                 </div>
-                <div class="datos__card">
-                    <span>email</span>
-                    <span>info@impresiones3d.com</span>
-                </div>
-            </div>
-        </div>
+            </article>
+        </section>
 
 
     </main>
