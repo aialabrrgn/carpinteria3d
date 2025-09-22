@@ -19,3 +19,19 @@
     box-sizing: border-box;
     font-family: "Nunito";
 }
+/****************Header nellys***********/
+.header__nav{
+    display: flex;
+}
+.lista{
+    display: flex;
+    gap:16px;
+    list-style: none;
+}
+.lista-items a{
+    text-decoration: none;
+    color: var(--color-acento);
+}
+.btn-header{
+    background-color: var(--color-acento);
+}
