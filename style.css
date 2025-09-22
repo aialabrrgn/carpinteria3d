@@ -21,12 +21,15 @@
 }
 
 /****************Header nellys***********/
-
+.header {
+    background-color: var(--color-principal-oscuro);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 }
-.logo{
+
+.logo {
     width: 50%;
 }
 
@@ -47,7 +50,7 @@
     color: var(--color-acento);
 }
 
-.btn-header{
+.btn-header {
     background-color: var(--color-acento);
     border-radius: var(--border-radius);
     border: var(--color-secundario);
@@ -58,7 +61,8 @@
     font-weight: bolder;
     height: auto;
 }
-.header-container{
+
+.header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,11 +71,23 @@
 }
 
 /* Front Page*/
-.main {
 
+.cuerpo {
     background-color: var(--color-secundario);
-
 }
+
+.main {
+    width: 100%;
+    background-color: var(--color-secundario);
+}
+
+.main__texto {
+    text-align: center;
+    left: 348px;
+    padding: 62px;
+    top: 500px;
+}
+
 
 .cabecera__contacto {
     text-decoration: none;
@@ -81,6 +97,7 @@
     padding: 8px;
     font-weight: bold;
     font-size: 25px;
+    margin-top: 32px;
 }
 
 .main__texto {
@@ -88,58 +105,66 @@
     text-align: center;
 }
 
-.main__titulo{
+.main__titulo {
     position: relative;
     text-align: center;
+    font-size: 100px;
 }
 
-.main__subtitulo{
+.main__subtitulo {
     position: relative;
     text-align: center;
+    font-size: 50px;
+    margin-bottom: 32px;
 }
+.img__cabecera {
+    width: 1905px;
+    position: absolute;
+    opacity: 0.65;
+}  
 
 .img__art {
     height: 300px;
-    width: 250px;
-}
-
-.img__cabecera {
-    width: 1905px;
-    /* position: absolute; */
-
 }
 
 .main__img {
     width: 100vh;
-
 }
 
-.section__art {
-    column-count: 3;
+.seccion__art {
     display: flex;
+    flex-direction: row;
+    gap: 150px;
+    justify-content: center;
+    padding: 32px;
+    position: relative;
+    bottom: -900px;
 }
-
-
 
 .art {
     display: flex;
     flex-direction: column;
-    
-
+    width: 332px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 16px;
+    gap: 16px;
 }
 
-.art1,
-.art2,
-.art3 {
-    display: flex;
-}
-
-.art__titulo, .art__info {
+.art__titulo,
+.art__info {
     display: flex;
     flex-direction: column;
 }
 
 .lateral {}
+
+@media min(796px) {
+    .seccion__art {
+        display: flex; 
+        flex-direction: column; 
+    }
+}
 
 /* Página de contacto */
 .contacto {
