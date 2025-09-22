@@ -21,12 +21,12 @@
 }
 
 /****************Header nellys***********/
+
 .header {
     background-color: var(--color-principal-oscuro);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 .logo {
@@ -144,6 +144,14 @@
 .art {
     display: flex;
     flex-direction: column;
+
+
+}
+
+.art1,
+.art2,
+.art3 {
+    display: flex;
     width: 332px;
     background-color: white;
     padding: 32px;
@@ -251,4 +259,33 @@
 
 .datos__enlace:hover {
     text-decoration: underline;
+}
+
+@media (max-width:1024px) {
+    .contacto {
+        flex-direction: column;
+    }
+
+    .formulario,
+    .datos {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .datos {
+        grid-template-rows: 1fr;
+    }
+
+    .formulario {
+        border-right: none;
+        border-bottom: 1px solid var(--color-principal-oscuro);
+    }
+
+    .datos__cardmaps {
+        height: 240px;
+    }
+
+    .datos__card {
+        grid-column: 1 / 3;
+    }
 }
